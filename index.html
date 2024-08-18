@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manu's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Manobhi Sri Ram</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Manu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/HeroImage.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Manu</h1>
+        <p class="section_text_p2">Full-Stack Programmer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/Manobhi_SriRam_RESUME.pdf')"
+          >
+            RESUME
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/manobhi-sriram-86b455229/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/manobhisriram1'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section_text_p1">Discover My Journey</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <!-- <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" /> -->
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>2+ years <br />Java & Web Development</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.Tech Cyber-Physical Systems</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello! I'm <span class="highlight">Manu</span>, a passionate <span class="highlight">Full-Stack Programmer</span> with a knack for <span class="highlight">Java development</span>, <span class="highlight">web solutions</span>, and <span class="highlight">cyber-physical systems</span>. My journey in technology has been a rewarding one, blending the intricate world of software with a focus on creating user-friendly applications. With over two years of hands-on experience, I specialize in crafting innovative solutions that bridge the gap between complex systems and intuitive interfaces.
+            </p>
+            <p>
+              My approach to development is straightforward: <span class="highlight">focus on one project at a time</span>, ensuring that every line of code contributes to a seamless user experience. This philosophy has guided my work in various domains, from web applications to system solutions and beyond.
+            </p>
+            <p>
+              As Virat Kohli once said, "<span class="quote">"Self-belief and hard work will always earn you success."</span>" I embrace this mindset every day, channeling my enthusiasm for technology into creating meaningful, impactful projects.
+            </p>
+            <p>
+              Whether I'm developing a new web application or working on an innovative system solution, my goal is to deliver excellence in every aspect. I believe that simplicity and clarity in code lead to the most effective solutions, and I strive to apply this principle in all my work.
+            </p>
+            <p class="quote">
+              "If it scares you, it might be a good thing to try." – Seth Godin
+            </p>
+            <p class="quote">
+              
+            </p>
+            <p class="quote">
+                                                                                                                         
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+
+    
+    <div class="skills-container">
+      
+      <br>
+      <br>
+      <br>
+      <h1>Explore My </h1>
+      <h2 class="skills-title">Skills</h2>
+      <div class="skills">
+          <div class="skill">
+              <img src="assets/java.jpg" alt="JAVA">
+              <p>JAVA</p>
+          </div>
+          <div class="skill">
+              <img src="assets/html.jpg" alt="HTML">
+              <p>HTML</p>
+          </div>
+          <div class="skill">
+              <img src="assets/css.jpg" alt="CSS">
+              <p>CSS</p>
+          </div>
+          <div class="skill">
+              <img src="assets/js.jpg" alt="JS">
+              <p>Js</p>
+          </div>
+          <div class="skill">
+              <img src="assets/react.jpg" alt="REACT JS">
+              <p>React Js</p>
+          </div>
+          <div class="skill">
+              <img src="assets/nodejsnew.jpg" alt="NODE JS">
+              <p>NODE Js</p>
+          </div>
+          <div class="skill">
+              <img src="assets/mysql.jpg" alt="MY SQL">
+              <p>MY SQL</p>
+          </div>
+      </div>
+      <div class="skills">
+          <div class="skill">
+              <img src="assets/cpp.jpg" alt="C++">
+              <p>C++</p>
+          </div>
+          <div class="skill">
+              <img src="assets/git.jpg" alt="GIT">
+              <p>Git</p>
+          </div>
+          <div class="skill">
+              <img src="assets/ithubnew.jpg" alt="GIT HUB">
+              <p>Git Hub</p>
+          </div>
+          <div class="skill">
+              <img src="assets/mongodb.jpg" alt="MongoDB">
+              <p>MongoDB</p>
+          </div>
+          <div class="skill">
+              <img src="assets/python.jpg" alt="Python">
+              <p>Python</p>
+          </div>
+          <div class="skill">
+              <img src="assets/vscode.jpg" alt="VS CODE">
+              <p>VS Code</p>
+          </div>
+          <div class="skill">
+              <img src="assets/expressjs.jpg" alt="EXPRESS JS">
+              <p>Express Js</p>
+          </div>
+      </div>
+  </div>
+    
+
+   
+
+
+<!-- Projects Section -->
+<section id="projects">
+  <p class="section_text_p1">Take a Look at my</p>
+  <h1 class="title">Projects</h1>
+
+  <p><h2>Web Development</h2></p>
+  <div class="projects-section">
+    <div class="project-card">
+      <img src="assets/tts.jpg" alt="Text to Speech Converter" class="project-image" />
+      <h2 class="project-title">Text to Speech Converter</h2>
+      <div class="project-buttons">
+        <button onclick="window.open('https://github.com/manobhisriram1/Text-to-Speech-Converter')">GitHub</button>
+        <button onclick="window.open('https://manobhisriram1.github.io/Text-to-Speech-Converter/')">Live Demo</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/qrcode.jpg" alt="QR Code Generator" class="project-image" />
+      <h2 class="project-title">QR Code Generator</h2>
+      <div class="project-buttons">
+        <button onclick="window.open('https://github.com/manobhisriram1/QR-CODE-Generator')">GitHub</button>
+        <button onclick="window.open('https://manobhisriram1.github.io/QR-CODE-Generator/')">Live Demo</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/imagesearch.jpg" alt="Image Search Engine" class="project-image" />
+      <h2 class="project-title">Image Search Engine</h2>
+      <div class="project-buttons">
+        <button onclick="window.open('https://github.com/manobhisriram1/Image-Search-Engine')">GitHub</button>
+        <button onclick="window.open('https://manobhisriram1.github.io/Image-Search-Engine/')">Live Demo</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="projects-section">
+    <!-- Reuse the same projects if applicable, or include different projects -->
+    <div class="project-card">
+      <img src="assets/bikeshowroom.jpg" alt="Text to Speech Converter" class="project-image" />
+      <h2 class="project-title">Online Bike Show Room</h2>
+      <div class="project-buttons">
+        <button onclick="window.open('https://github.com/manobhisriram1/rides-client')">GitHub</button>
+        <button onclick="window.open('https://bike-rides.vercel.app/')">Live Demo</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/bookstall .jpg" alt="QR Code Generator" class="project-image" />
+      <h2 class="project-title">Online Second Hand Book Stall</h2>
+      <div class="project-buttons">
+        <button onclick="window.open('https://github.com/manobhisriram1/buy-sell-books-hackathon')">GitHub</button>
+        <button onclick="window.open('https://buy-sell-iota.vercel.app/')">Live Demo</button>
+      </div>
+    </div>
+
+
+    <div class="project-card">
+      <img src="assets/hospital.jpg" alt="Image Search Engine" class="project-image" />
+      <h2 class="project-title">Online Hospital Management System</h2>
+      <div class="project-buttons">
+        <button onclick="window.open('https://github.com/manobhisriram1/hospital-hackathon')">GitHub</button>
+        <button onclick="window.open('https://hospital-hackathon.vercel.app/')">Live Demo</button>
+      </div>
+    </div>
+
+  </div>
+<br>
+<br>
+  <p><h2>Python and Machine Learning</h2></p>
+  <div class="projects-section">
+    <!-- Reuse the same projects if applicable, or include different projects -->
+    <div class="project-card">
+      <img src="assets/calorie.jpg" alt="Text to Speech Converter" class="project-image" />
+      <h2 class="project-title">Calorie Tracker</h2>
+      <div class="project-buttons">
+        <button onclick="window.open('https://github.com/manobhisriram1/NutriTrack-using-DJANGO')">GitHub</button>
+        <button onclick="window.open('https://github.com/manobhisriram1/NutriTrack-using-DJANGO')">Live Demo</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/yt.jpg" alt="QR Code Generator" class="project-image" />
+      <h2 class="project-title">Youtube Comments Sentiment Analysis</h2>
+      <div class="project-buttons">
+        <button onclick="window.open('https://github.com/manobhisriram1/sentiment')">GitHub</button>
+        <button onclick="window.open('https://yt-comments-sentiment-analysis.streamlit.app/')">Live Demo</button>
+      </div>
+    </div>
+
+
+    <div class="project-card">
+      <img src="assets/sprinkler.jpg" alt="Image Search Engine" class="project-image" />
+      <h2 class="project-title">Sprinkler Irrigation System</h2>
+      <div class="project-buttons">
+        <button onclick="window.open('https://github.com/manobhisriram1/sprinkler-irrigation-system-report')">GitHub</button>
+        <button onclick="window.open('https://sprinkler-irrigation-system.streamlit.app/')">Live Demo</button>
+      </div>
+    </div>
+</div>
+<br>
+<br>
+   <!-- JAVA & IOT PROJECTS -->
+<h2>JAVA</h2>
+<div class="projects-section">
+  <!-- Reuse the same projects if applicable, or include different projects -->
+  <div class="project-card">
+    <img src="assets/bank.jpg" alt="Text to Speech Converter" class="project-image" />
+    <h2 class="project-title">Bank Management System</h2>
+    <div class="project-buttons">
+      <button onclick="window.open('https://github.com/manobhisriram1/Bank-Management-System')">GitHub</button>
+      <button onclick="window.open('https://github.com/manobhisriram1/Bank-Management-System')">Live Demo</button>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="assets/wastemanagement.jpg" alt="QR Code Generator" class="project-image" />
+    <h2 class="project-title">Automatic Waste Management System</h2>
+    <div class="project-buttons">
+      <button onclick="window.open('')">GitHub</button>
+      <button onclick="window.open('https://your-website.com/qr-code-generator-demo', '_blank')">Live Demo</button>
+    </div>
+  </div>
+</div>
+
+
+<img
+  src="./assets/arrow.png"
+  alt="Arrow icon"
+  class="icon arrow"
+  onclick="location.href='./#certifications'"
+/>
+<br>
+<br>
+
+
+    <div class="certifications">
+        <h2>Certifications</h2>
+        
+        <br>
+        <div class="certification-row">
+            <div class="certification" onclick="showOverlay('assets/aws.jpg')">
+                <img src="assets/aws.jpg" alt="Certificate 1">
+            </div>
+            <div class="certification" onclick="showOverlay('assets/mern.jpg')">
+                <img src="assets/mern.jpg" alt="Certificate 2">
+            </div>
+            <div class="certification" onclick="showOverlay('assets/ebusiness.jpg')">
+                <img src="assets/ebusiness.jpg" alt="Certificate 3">
+            </div>
+        </div>
+        <div class="certification-row">
+            <div class="certification" onclick="showOverlay('assets/CyberX.jpg')">
+                <img src="assets/CyberX.jpg" alt="Certificate 4">
+            </div>
+            <div class="certification" onclick="showOverlay('assets/VAC2014.jpg')">
+                <img src="assets/VAC2014.jpg" alt="Certificate 5">
+            </div>
+            <div class="certification" onclick="showOverlay('assets/webverse.jpg')">
+                <img src="assets/webverse.jpg" alt="Certificate 6">
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="overlay" onclick="hideOverlay()">
+        <img id="overlayImage" src="" alt="Zoomed Certification">
+    </div>
+  
+    <section id="contact">
+    <section class="contact-section">
+      <div class="contact-content">
+        <div class="contact-left">
+          <h2>Contact Me</h2>
+          <p>Feel free to reach out if you have any questions or inquiries.</p>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="message">Your Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+  
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <br>
+  
+        <div class="contact-right">
+          <div class="contact-details">
+            <h3>Contact Details</h3>
+            <ul>
+              <br>
+              <li><strong>Email:</strong> manobhisriram@gmail.com</li>
+              <li><strong>Phone:</strong> 9919938589</li>
+              <li><strong>Address:</strong> Andhra Pradesh - India</li>
+            </ul>
+          </div>
+  
+          <div class="social-links">
+            <h3>Find Me Online</h3>
+            <br>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/manobhi-sriram-86b455229/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+              <li><a href="https://github.com/manobhisriram1"><i class="fab fa-github"></i> GitHub</a></li>
+              <li><a href="https://leetcode.com/u/Manobhisriram1234/"><i class="fab fa-leetcode"></i> LeetCode</a></li>
+              <li><a href="manobhisriram@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
